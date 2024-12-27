@@ -44,5 +44,14 @@ namespace AccunMedyaPortfolioProject.Controllers
             var category = db.Categories.Find(id);
             return View(category);
         }
+
+        [HttpPost]
+        public ActionResult UpdateCategory(Category category)
+        {
+            var updatedCategory = db.Categories.Find(category.Id);
+            updatedCategory.Name = category.Name;
+            db.SaveChanges();
+            return RedirectToAction("CategoryList");
+        }
     }
 }
