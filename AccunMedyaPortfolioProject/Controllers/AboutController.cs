@@ -28,7 +28,6 @@ namespace AccunMedyaPortfolioProject.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         public ActionResult DeleteAbout(int id)
         {
             var value = db.Abouts.Find(id);
@@ -38,7 +37,6 @@ namespace AccunMedyaPortfolioProject.Controllers
 
         }
         [HttpGet]
-
         public ActionResult UpdateAbout(int id)
         {
             var about = db.Abouts.Find(id);
@@ -46,7 +44,6 @@ namespace AccunMedyaPortfolioProject.Controllers
         }
 
         [HttpPost]
-
         public ActionResult UpdateAbout(About about)
         {
             var updatedAbout = db.Abouts.Find(about.Id);
@@ -57,6 +54,5 @@ namespace AccunMedyaPortfolioProject.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
     }
 }

@@ -1,0 +1,28 @@
+﻿@model AccunMedyaPortfolioProject.Models.Testimonial
+@{
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>CreateTestimonial</h2>
+
+<div class="container">
+    <form method="post">
+
+        <label>İsim Soyisim</label>
+        @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+        <br />
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Resim Urlsi</label>
+        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+        <br />
+        <label>Yorum</label>
+        @Html.TextBoxFor(x => x.Comment, new { @class = "form-control" })
+        <br />
+
+    <button class="btn btn-info">Yorumu kaydet</button>
+    </form>
+</div>
+
