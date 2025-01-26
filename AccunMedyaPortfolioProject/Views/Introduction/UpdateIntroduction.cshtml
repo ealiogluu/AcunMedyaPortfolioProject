@@ -1,0 +1,25 @@
+﻿@model AccunMedyaPortfolioProject.Models.Introduction
+@{
+    ViewBag.Title = "UpdateIntroduction";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+
+}
+
+<h2>Tanıtımı Güncelle</h2>
+<br />
+
+<div class="container">
+    <form method="post">
+        @Html.HiddenFor(x => x.Id)
+
+        <label style="color:black">Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label style="color:black">Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Güncelle</button>
+
+    </form>
+</div>
+

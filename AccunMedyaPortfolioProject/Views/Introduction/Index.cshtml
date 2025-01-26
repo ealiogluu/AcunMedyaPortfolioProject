@@ -1,0 +1,41 @@
+﻿@model List<AccunMedyaPortfolioProject.Models.Introduction>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+
+}
+<h2 class="text-center mt-4">Tanıtım Kontrol Paneli</h2>
+<br />
+
+<div class="container">
+    <table class="table table-bordered">
+
+        <thead>
+
+            <tr>
+                <th>Id</th>
+                <th>Başlık</th>
+                <th>Açıklama</th>
+                <th>Güncelle</th>
+                <th>Kaldır</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var intro in Model)
+            {
+                <tr>
+                    <td>@intro.Id</td>
+                    <td>@intro.Title</td>
+                    <td>@intro.Description</td>
+                    <td><a href="/Introduction/UpdateIntroduction/@intro.Id" class="btn btn-success">Güncelle</a></td>
+                    <td><a href="/Introduction/DeleteIntroduction/@intro.Id" class="btn btn-danger">Kaldır</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Introduction/CreateIntroduction" class="btn btn-dark">Yeni Tanıtım Ekle</a>
+
+</div>

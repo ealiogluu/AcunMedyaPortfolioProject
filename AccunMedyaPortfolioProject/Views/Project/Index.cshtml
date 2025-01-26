@@ -4,7 +4,9 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Project List</h2>
+<h2 class="text-center mt-4">Proje Kontrol Paneli</h2>
+<br />
+
 
 <div class="container">
     <table class="table table-bordered">
@@ -28,7 +30,7 @@
                     <td>@project.Id</td>
                     <td>@project.ProjectName</td>
                     <td>@project.Category.Name</td>
-                    <td><img src="@project.CoverImageUrl" /> </td>
+                    <td><img src="@project.CoverImageUrl" style="width:50px;height:50px" /> </td>
                     <td>@project.Description</td>
                     <td>@project.ProjectLink</td>
                     <td><a href="/Project/UpdateProject/@project.Id" class="btn btn-success">Güncelle</a></td>

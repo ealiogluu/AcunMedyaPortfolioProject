@@ -1,0 +1,34 @@
+﻿@model AccunMedyaPortfolioProject.Models.Experience
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2 style="color:blueviolet">Deneyimi Güncelle</h2>
+<br />
+<div class="container">
+    <form method="post">
+        @Html.HiddenFor(x => x.Id)
+
+        <label style="color:black">Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label style="color:black">Şirket İsmi</label>
+        @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+        <br />
+        <label style="color:black">Başlangıç Tarihi</label>
+        @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control" })
+        <br />
+        <label style="color:black">Bitiş Tarihi</label>
+        @Html.TextBoxFor(x => x.EndDate, new { @class = "form-control" })
+        <br />
+        <label style="color:black">Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <button  class="btn btn-outline-dark " style="color:blueviolet">Güncelle</button>
+
+    </form>
+
+</div>
+
+

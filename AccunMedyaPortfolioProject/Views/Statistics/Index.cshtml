@@ -1,0 +1,44 @@
+﻿
+
+@{
+    ViewBag.Title = "Statistics";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2 class="text-center mt-4">İstatistikler</h2>
+
+<div class="container mt-5">
+    <table class="table table-striped table-hover table-bordered shadow-sm rounded">
+        <thead class="table-success text-center">
+            <tr>
+                <th>Projeler</th>
+                <th>Deneyimler</th>
+                <th>Referanslar</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            <tr>
+                <td>@ViewBag.Projects</td>
+                <td>@ViewBag.Experiences</td>
+                <td>@ViewBag.References</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<style>
+    table {
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    th {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+</style>

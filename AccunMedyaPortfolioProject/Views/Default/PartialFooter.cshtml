@@ -1,0 +1,66 @@
+﻿@model List<AccunMedyaPortfolioProject.Models.Category>
+<footer class="s-footer">
+
+    <div class="row">
+        <div class="column ss-copyright">
+            <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Telif Hakkı &copy;
+                <script>document.write(new Date().getFullYear());</script> Tüm hakları saklıdır.
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+
+        </div>
+
+
+    </div>
+    <div class="categories">
+        <h5>Kategoriler</h5> 
+        <div class="category-list">
+            <ul>
+                @foreach (var category in Model)
+                {
+                    <li><a href="#">@category.Name</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+
+</footer>
+<style>
+    .categories {
+        background: none; 
+        padding: 0; 
+        margin-left: 80px;
+    }
+
+        .categories h5 {
+            color: #fff; 
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+    .category-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .category-list li {
+        margin-bottom: 10px;
+    }
+
+    .category-list a {
+        text-decoration: none;
+        color: #fff; 
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+        .category-list a:hover {
+            color: #ddd; 
+            text-decoration: underline;
+        }
+
+
+</style>

@@ -1,0 +1,44 @@
+﻿@model List<AccunMedyaPortfolioProject.Models.SocialMedia>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+
+}
+
+<h2 class="text-center mt-4">Sosyal Medya Kontrol Paneli</h2>
+<br />
+<div class="container">
+    <table class="table table-bordered">
+
+        <thead>
+
+            <tr>
+                <th>Id</th>
+                <th>Platform</th>
+                <th>Platform Linki</th>
+                <th>Platform Resmi</th>
+                <th>Güncelle</th>
+                <th>Kaldır</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var platform in Model)
+            {
+                <tr>
+                    <td>@platform.Id</td>
+                    <td>@platform.Platform</td>
+                    <td>@platform.PlatformLink</td>
+                    <td><img src="@platform.ImageUrl" style="height:75px;width:75px" /> </td>
+                    <td><a href="/SocialMedia/UpdateSocialMedia/@platform.Id" class="btn btn-success">Güncelle</a></td>
+                    <td><a href="/SocialMedia/DeleteSocialMedia/@platform.Id" class="btn btn-danger">Kaldır</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/SocialMedia/CreateSocialMedia" class="btn btn-dark">Yeni Sosyal Medya Platformu Ekle</a>
+
+</div>
+

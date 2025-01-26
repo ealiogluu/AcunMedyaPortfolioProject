@@ -132,8 +132,15 @@
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
+    <Compile Include="Controllers\ExperienceController.cs" />
+    <Compile Include="Controllers\ExpertiseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IntroductionController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\SocialMediaController.cs" />
+    <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -151,6 +158,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Experience.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Expertise.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Introduction.cs">
@@ -172,6 +182,15 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Project.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SocialMedia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
@@ -202,6 +221,54 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="luther-1.0.0\android-chrome-192x192.png" />
+    <Content Include="luther-1.0.0\android-chrome-512x512.png" />
+    <Content Include="luther-1.0.0\apple-touch-icon.png" />
+    <Content Include="luther-1.0.0\css\styles.css" />
+    <Content Include="luther-1.0.0\css\vendor.css" />
+    <Content Include="luther-1.0.0\favicon-16x16.png" />
+    <Content Include="luther-1.0.0\favicon-32x32.png" />
+    <Content Include="luther-1.0.0\favicon.ico" />
+    <Content Include="luther-1.0.0\images\about-photo%402x.jpg" />
+    <Content Include="luther-1.0.0\images\about-photo.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-01.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-02.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-03.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-04.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-05.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-06.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-07.jpg" />
+    <Content Include="luther-1.0.0\images\avatars\user-08.jpg" />
+    <Content Include="luther-1.0.0\images\icons\icon-close.svg" />
+    <Content Include="luther-1.0.0\images\icons\icon-quote.svg" />
+    <Content Include="luther-1.0.0\images\icons\icon-tag.svg" />
+    <Content Include="luther-1.0.0\images\portfolio\fuji%402x.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\fuji.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\gallery\g-fuji.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\gallery\g-lamp.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\gallery\g-minimalismo.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\gallery\g-rucksack.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\gallery\g-sanddunes.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\gallery\g-skaterboy.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\lamp%402x.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\lamp.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\minimalismo%402x.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\minimalismo.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\rucksack%402x.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\rucksack.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\sanddunes%402x.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\sanddunes.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\skaterboy%402x.jpg" />
+    <Content Include="luther-1.0.0\images\portfolio\skaterboy.jpg" />
+    <Content Include="luther-1.0.0\images\sample-image.jpg" />
+    <Content Include="luther-1.0.0\images\wheel-1000.jpg" />
+    <Content Include="luther-1.0.0\images\wheel-2000.jpg" />
+    <Content Include="luther-1.0.0\images\wheel-500.jpg" />
+    <Content Include="luther-1.0.0\index.html" />
+    <Content Include="luther-1.0.0\js\main.js" />
+    <Content Include="luther-1.0.0\js\plugins.js" />
+    <Content Include="luther-1.0.0\readme.txt" />
+    <Content Include="luther-1.0.0\styles.html" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -225,6 +292,8 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="luther-1.0.0\site.webmanifest" />
+    <Content Include="Emine Nur Alioğlu.pdf" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -243,7 +312,9 @@
     <Content Include="sidebar-01\css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="sidebar-01\css\bootstrap\_media.css" />
     <Content Include="sidebar-01\css\style.css" />
-    <Content Include="sidebar-01\images\logo.jpg" />
+    <Content Include="sidebar-01\images\Emine.jpg" />
+    <Content Include="sidebar-01\images\fotoğrafım2.jpg" />
+    <Content Include="sidebar-01\images\portfolyo_jpeg-330c0.jpeg" />
     <Content Include="sidebar-01\index.html" />
     <Content Include="sidebar-01\js\bootstrap.min.js" />
     <Content Include="sidebar-01\js\jquery.min.js" />
@@ -366,7 +437,7 @@
     <Content Include="Views\AdminLayout\PartialHead.cshtml" />
     <Content Include="Views\AdminLayout\PartialSidebar.cshtml" />
     <Content Include="Views\AdminLayout\PartialScripts.cshtml" />
-    <Content Include="Views\Category\CategoryList.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Category\CreateCategory.cshtml" />
     <Content Include="Views\Category\UpdateCategory.cshtml" />
     <Content Include="Views\Project\Index.cshtml" />
@@ -381,6 +452,36 @@
     <Content Include="Views\Testimonial\Index.cshtml" />
     <Content Include="Views\Testimonial\CreateTestimonial.cshtml" />
     <Content Include="Views\Testimonial\UpdateTestimonial.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\PartialHead.cshtml" />
+    <Content Include="Views\Default\PartialSiteHeader.cshtml" />
+    <Content Include="Views\Default\PartialIntro.cshtml" />
+    <Content Include="Views\Default\PartialAbout.cshtml" />
+    <Content Include="Views\Default\PartialExperience.cshtml" />
+    <Content Include="Views\Default\PartialEducation.cshtml" />
+    <Content Include="Views\Default\PartialProject.cshtml" />
+    <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Default\PartialScripts.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Experience\Index.cshtml" />
+    <Content Include="Views\Experience\CreateExperience.cshtml" />
+    <Content Include="Views\Experience\UpdateExperience.cshtml" />
+    <Content Include="Views\Introduction\Index.cshtml" />
+    <Content Include="Views\Introduction\CreateIntroduction.cshtml" />
+    <Content Include="Views\Introduction\UpdateIntroduction.cshtml" />
+    <Content Include="Views\Education\Index.cshtml" />
+    <Content Include="Views\Education\CreateEducation.cshtml" />
+    <Content Include="Views\Education\UpdateEducation.cshtml" />
+    <Content Include="Views\Expertise\Index.cshtml" />
+    <Content Include="Views\Expertise\CreateExpertise.cshtml" />
+    <Content Include="Views\Expertise\UpdateExpertise.cshtml" />
+    <Content Include="Views\SocialMedia\UpdateSocialMedia.cshtml" />
+    <Content Include="Views\SocialMedia\CreateSocialMedia.cshtml" />
+    <Content Include="Views\SocialMedia\Index.cshtml" />
+    <Content Include="Views\Default\PartialExpertise.cshtml" />
+    <Content Include="Views\Default\PartialSocialMedia.cshtml" />
+    <Content Include="Views\Statistics\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

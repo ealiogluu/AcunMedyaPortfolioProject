@@ -1,0 +1,25 @@
+﻿@model AccunMedyaPortfolioProject.Models.Expertise
+@{
+    ViewBag.Title = "UpdateExpertise";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+
+}
+//buranın hata vermesi çok normal günceleme sayfasını direkt çalıştıramayız, bir id belirtmemiz lazım bunun için de indexten güncellemeye gitmemiz lazım.
+Başka nerede hata var
+<h2>Uzmanlık Alanını Güncelle</h2>
+<br />
+<div class="container">
+    <form method="post">
+
+        @Html.HiddenFor(x => x.Id)
+
+        <label style="color:black">Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+
+        <button class="btn btn-info">Güncelle</button>
+
+    </form>
+</div>
+
+

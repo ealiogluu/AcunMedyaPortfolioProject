@@ -4,25 +4,25 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Hakkımda güncelleme sayfası</h2>
-
+<h2 style="color:blueviolet">Hakkında Güncelle</h2>
+<br />
 <div class="container">
     <form method="post">
         @Html.HiddenFor(x => x.Id)
 
-        <label>Başlık</label>
+        <label style="color:black">Başlık</label>
         @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
         <br />
-        <label>Açıklama</label>
+        <label style="color:black">Açıklama</label>
         @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
         <br />
-        <label>Resim Urlsi</label>
+        <label style="color:black">Resim Urlsi</label>
         @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
         <br />
-        <label>CV Linki</label>
+        <label style="color:black">CV Linki</label>
         @Html.TextBoxFor(x => x.CVLink, new { @class = "form-control" })
         <br />
-        <button class="btn btn-info" >Hakkımdayı güncelle</button>
+        <button class="btn btn-outline-dark " style="color:blueviolet" >Güncelle</button>
     </form>
 
 </div>

@@ -1,8 +1,5 @@
 ﻿using AccunMedyaPortfolioProject.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace AccunMedyaPortfolioProject.Controllers
@@ -12,7 +9,7 @@ namespace AccunMedyaPortfolioProject.Controllers
         // GET: Category
 
         PortfolioDBEntities1 db = new PortfolioDBEntities1();
-        public ActionResult CategoryList()
+        public ActionResult Index()
         {
             var categoryList = db.Categories.ToList();
             return View(categoryList);
@@ -28,14 +25,14 @@ namespace AccunMedyaPortfolioProject.Controllers
         {
             db.Categories.Add(category);
             db.SaveChanges();
-            return RedirectToAction("CategoryList");
+            return RedirectToAction("Index");
         }
         public ActionResult DeleteCategory(int id)
         {
             var category = db.Categories.Find(id);
             db.Categories.Remove(category);
             db.SaveChanges();
-            return RedirectToAction("CategoryList");
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -51,7 +48,7 @@ namespace AccunMedyaPortfolioProject.Controllers
             var updatedCategory = db.Categories.Find(category.Id);
             updatedCategory.Name = category.Name;
             db.SaveChanges();
-            return RedirectToAction("CategoryList");
+            return RedirectToAction("Index");
         }
     }
 }
