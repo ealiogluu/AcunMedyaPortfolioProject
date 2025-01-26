@@ -1,4 +1,4 @@
-# 🪪Kişisel Portfolyo Sitesi
+# 🪪Kişisel Portföy Sitesi
 
 Bu proje, Acun Medya Akademi'de aldığım eğitim rehberliğinde ilk projem olarak yapılmıştır.
 
